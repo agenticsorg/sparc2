@@ -104,7 +104,7 @@ npm install --save-dev @agentics.org/sparc2
 
 ```bash
 # Clone the repository
-git clone https://github.com/agentics-org/sparc2.git
+git clone https://github.com/agenticsorg/sparc2.git
 cd sparc2
 
 # Install dependencies
