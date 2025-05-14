@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/agenticsorg-sparc2-badge.png)](https://mseep.ai/app/agenticsorg-sparc2)
+
 
 
 # SPARC Code Agent + MCP Server
