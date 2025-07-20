@@ -48,12 +48,14 @@ case $OS in
         # Check if .bashrc or .zshrc exists and add Deno to PATH
         if [ -f "$HOME/.bashrc" ]; then
             echo -e "${YELLOW}Adding Deno to PATH in .bashrc${NC}"
+            echo "" >> "$HOME/.bashrc"
             echo 'export DENO_INSTALL="$HOME/.deno"' >> "$HOME/.bashrc"
             echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> "$HOME/.bashrc"
         fi
         
         if [ -f "$HOME/.zshrc" ]; then
             echo -e "${YELLOW}Adding Deno to PATH in .zshrc${NC}"
+            echo "" >> "$HOME/.zshrc"
             echo 'export DENO_INSTALL="$HOME/.deno"' >> "$HOME/.zshrc"
             echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> "$HOME/.zshrc"
         fi
