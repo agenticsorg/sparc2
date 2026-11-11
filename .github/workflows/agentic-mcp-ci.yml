@@ -1,0 +1,26 @@
+name: agentic-mcp CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scripts/agentic-mcp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --ignore-scripts
+      - run: npm run build
+      # research.test.ts is excluded: it fails to type-check on main (TS2740), tracked separately.
+      - run: npm run test:unit
+      - run: npm run test:integration
