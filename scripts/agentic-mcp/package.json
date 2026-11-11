@@ -47,7 +47,7 @@
     "@modelcontextprotocol/sdk": "^1.0.4",
     "@supabase/supabase-js": "^2.7.1",
     "dotenv": "^16.4.7",
-    "openai": "^4.20.1"
+    "openai": "^6.49.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
